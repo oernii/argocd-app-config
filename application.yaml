@@ -11,11 +11,11 @@ spec:
     path: dev
   destination: 
     server: https://kubernetes.default.svc
-    namespace: myapp
+    namespace: argotest
 
   syncPolicy:
     syncOptions:
-    - CreateNamespace=true
+    - CreateNamespace=false
 
     automated:
       selfHeal: true
